@@ -1,3 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.inputFile {
+  width: 100%;
+  position: relative;
+  display: inline-block
+}
+
+.inputFile::before {
+  content: 'Arrastre aquí su archivo';
+  font-family: 'Open Sans';
+  height: 32px;
+  background-color: #5678EF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.inputFile input[type='file'] {
+  display: inline-block;
+  opacity: 0
+}
+
+.inputFile2 {
+  width: 100%;
+  position: relative;
+  display: inline-block
+}
+
+.inputFile2::before {
+  content: 'Arrestre aquí su archivo';
+  height: 32px;
+  background-color: #93ef56;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.inputFile2 input[type='file'] {
+  display: inline-block;
+  opacity: 0
+}
+
+
+
+/* ====================================== */
+
 .App {
   text-align: center;
 }
@@ -32,6 +101,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
